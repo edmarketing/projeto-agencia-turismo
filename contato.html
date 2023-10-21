@@ -32,7 +32,8 @@
 			<input type="text" name="fNome" maxlength="40" size="50" title="Digite seu nome" required autofocus><br><br>
 			
 			<label>Telefone</label><br>
-			<input type="tel" maxlength="15" name="fFone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(xx)xxxx-xxxx" title="Digite seu telefone" required><br><br>
+			<input type="text" name="telefone" data-mask="(00) 00000-0000" data-mask-selectonfocus="true" /><br><br>
+			<!--<input type="tel" maxlength="15" name="fFone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(99)99999-9999" title="Digite seu telefone" required><br><br>-->
 			
 			<label>Email</label><br>
 			<input type="email" name="fMail" size="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Digite seu email" required><br><br>
@@ -41,7 +42,7 @@
 			<input type="text" name="fDestino" maxlength="40" size="50" title="Digite seu local de destino" required><br><br>
 
 			<label>Informe a data desejada</label><br>
-			<input type="date" maxlength="10" name="fData" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2012-01-01" max="2014-02-20" required><br><br>
+			<input type="date" maxlength="10" name="fData" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2023-01-01" max="2024-12-31" required><br><br>
 
 			<input type="submit" value="Enviar" id="btn">
 			<input type="reset" value="Limpar" id="btn">
